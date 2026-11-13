@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* Primaire */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-soft: #eef2ff;
+
+  /* Surfaces */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+
+  /* Texte */
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+
+  /* Statuts */
+  --color-todo: #64748b;
+  --color-progress: #2563eb;
+  --color-done: #16a34a;
+  --color-late: #dc2626;
+
+  /* Priorités */
+  --color-low: #0891b2;
+  --color-medium: #d97706;
+  --color-high: #dc2626;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+  }
+}
